@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang=”es,en”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon_0.png" type="image/png" />
+    <!-- Seccion de los estilos de bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Noticias | Portal Tabasco</title>
+</head>
+
+<body>
+    <!-- Comienza el Navbar -->
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-bottom "
+            style="background-color: rgba(157,36,73,255)">
+            <div class="container-lg">
+                <a class="navbar-brand text-light fw-bold" href="#">Portal Noticias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <form class="d-flex">
+                        <div class="search-container">
+                            <input type="text" name="search" placeholder="Buscar..." class="search-input">
+                            <a href="#" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </form>
+                   <p>
+
+                   </p>
+                  
+                   <form class="d-flex">
+                    <div class="search-container">
+                        <a href="#" class="search-btn">
+                            <li class="nav-item dropdown">
+                                <i class="fas fa-globe-americas nav-item dropdown"></i>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item translate"  id="es">Español</a></li>
+                                    <li><a class="dropdown-item translate"  id="en">Inglés</a></li>
+                                </ul>
+                            </li>
+                       
+                        </a>
+                    </div>
+                </form>
+
+                    <p>
+
+                    </p>
+                   
+                    <form class="d-flex">
+                        <div class="search-container">
+                            <a href="./index.html" class="search-btn">
+                               <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-lg">
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a  key="inicio" class="nav-link lang" aria-current="page"
+                            href="./index.html"> Inicio</a>
+                    </li>
+
+                        <li class="nav-item dropdown">
+                            <a  key="seccion" class="nav-link lang" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Seccion de noticias</a>
+                            <ul  class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a  key="popular-menu" class="dropdown-item lang " href="#popular">Popular</a></li>
+                                <li><a  key="avisos-menu" class="dropdown-item lang" href="#avisos">Avisos</a></li>
+                                <li><a  key="reciente-menu" class="dropdown-item lang" href="#reciente">Reciente</a></li>
+                                <li><a  key="general-menu" class="dropdown-item lang" href="#general">General</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a  key="directorio" class="nav-link lang"
+                                href="./directorio.html">Directorio</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
+                        <a href="./añadir-noticias.html"><button style="background-color: #b38e5d" class="btn text-light lang" type="menu" key="anadir"> 
+                            Añadir noticia</button> </a>
+                      </div>
+                </div>
+        </nav>
+    </header>
+    <!--Terina seccion de Navbar-->
+
+    <!-- Inicia Seccion carrucel -->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/Carrusel-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/Carrusel-1B.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/Carrusel-2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Termina seccion carrucel-->
+
+    <!-- Comienza Secccion noticias -->
+    <div class="container  ">
+        <h2 class="card-body text-secondary lang"  key="avisos1" id="avisos">AVISOS</h2>
+        <div id="divPadre1">
+            <div class="row row-cols-1 row-cols-md-3 ">
+
+                <div class="col">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <a href="./detalles.html">
+                                <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                    class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)">
+                            <a class="text-white" style="text-decoration:none" href="#"> Publico general
+                            </a>
+                        </button>
+                        <h5 class="card-title ">
+                            <a style="text-decoration:none" href="./detalles.html">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                               
+                            </a>
+                        </h5>
+                    </div>
+
+                </div>
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top" alt="..." href="#">
+                        </div>
+
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Publico general
+                            </a></button>
+
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a>
+                            
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Noticia</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <a href="./seccion-noticias.html"></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top" alt="..." href="#">
+                        </div>
+
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Publico general
+                            </a></button>
+
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn text-white lang" style="background-color: rgb(177, 87, 57)" type="button"
+                onclick="mostrarMas1(this)"  key="mostrar">Mostrar más</button>
+        </div>
+
+
+        <h2 class="card-body text-secondary lang"  key="reciente1" id="reciente">RECIENTES</h2>
+        <div id="divPadre">
+            <div class="row row-cols-1 row-cols-md-3 ">
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top " alt="..." href="#">
+                        </div>
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Salud
+                            </a></button>
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top " alt="..." href="#">
+                        </div>
+
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Salud
+                            </a></button>
+
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a></h5>
+                    </div>
+                </div>
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top " alt="..." href="#">
+                        </div>
+
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Salud
+                            </a></button>
+
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn text-white lang" style="background-color: rgb(177, 87, 57)" type="button"
+                onclick="mostrarMas(this)" key="mostrar">Mostrar más</button>
+        </div>
+        <br>
+        <h2 class="card-body text-secondary lang"  key="general1" id="general">GENERALES</h2>
+        <div id="divPadre">
+            <div class="row row-cols-1 row-cols-md-3 ">
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top " alt="..." href="#">
+                        </div>
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Salud
+                            </a></button>
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top " alt="..." href="#">
+                        </div>
+
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Salud
+                            </a></button>
+
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a></h5>
+                    </div>
+                </div>
+
+                <div class="col  ">
+                    <div class="contenedor">
+                        <div class="responsive">
+                            <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg"
+                                class="card-img-top " alt="..." href="#">
+                        </div>
+
+                    </div>
+                    <div class="card-body  ">
+                        <button type="button" class="btn btn-sm " style="background-color: rgba(179,142,93,255)"><a
+                                class="text-white" style="text-decoration:none" href="#"> Salud
+                            </a></button>
+
+                        <h5 class="card-title "> <a style="text-decoration:none"
+                                href="https://tabasco.gob.mx/noticias/lluvias-marcaran-el-jueves-en-la-sierra-rios-y-parte-de-la-chontalpa">
+                                Lluvias marcarán el jueves en la Sierra, Ríos y parte de la Chontalpa
+                            </a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn text-white lang" style="background-color: rgb(177, 87, 57)" type="button"
+                onclick="mostrarMas(this)" key="mostrar">Mostrar más</button>
+        </div>
+        <br>
+    </div>
+    </div>
+    <!--Termina seccion noticias-->
+
+
+    <!--Inica Footer -->
+    <p class="centrar" class="float-right container">
+        <a class="text-dark arriba fa-lg" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    </p>
+    <footer class="text-center  text-white" style="background-color: rgba(157,36,73,255)" width="auto" height="auto">
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/Gobierno_Tab" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" align="center">
+                        <!-- Content -->
+
+                        <p>
+                        <div
+                            class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item container-lg ">
+
+                            <p class="container-lg"><img alt="firma blanco.png" height="173" src="img/firma blanco.png"
+                                    width="100" /></p>
+                        </div>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Transparencia
+
+                        </h6>
+                        <p class="text-light">
+                            Portal Transparencia
+
+                        </p>
+                        <p class="text-light">
+                            ITAIP
+                        </p>
+                        <p class="text-light">
+                            Infomex
+                        </p>
+                        <p class="text-light">
+                            Accesibilidad
+                        </p>
+                        <p class="text-light">
+                            Mapa del Sitio
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="region region-footer-fourth-column">
+                            <div id="block-twitter"
+                                class="block block-block-content block-block-content915ccd8b-6cfd-4440-98c4-eae44783ffe5">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Twitter
+                                </h6>
+                                <div
+                                    class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                    <p><a class="twitter-timeline" data-chrome="nofooter noborders noheader"
+                                            data-dnt="false" data-height="260" data-theme="dark" data-tweet-limit="1"
+                                            href="https://twitter.com/Gobierno_Tab?ref_src=twsrc%5Etfw">Tweets by
+                                            Gobierno_Tab</a>
+                                        <script async="" src="https://platform.twitter.com/widgets.js"
+                                            charset="utf-8"></script>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold"> Gobierno del Estado de Tabasco © Derechos Reservados</a>
+        </div>
+
+        <!-- Copyright -->
+    </footer>
+    <!-- Termina Footer -->
+
+
+
+
+    <!-- Scripts para el funcinamiento de los estilos de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Cargar más -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/ver-mas.js"></script>
+    <script src="./js/script.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/ccf41397b0.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{
+    "es":{
+      "inicio":"Inicio",
+      "seccion":"Sección de noticias",
+      "reciente-menu":"Reciente",
+      "popular-menu":"Popular",
+      "avisos-menu":"Avisos",
+      "general-menu":"General",
+      "directorio":"Directorio",
+      "avisos1":"AVISOS",
+      "reciente1":"RECIENTES",
+      "general1":"GENERAL",
+      "mostrar":"Mostrar más",
+      "accerder":"ACCEDER",
+      "recupera":"RECUPERA AQUÍ TU CONTRASEÑA",
+      "anadir":"Añadir noticia",
+      "titulo":"Titulo",
+      "subtitulo":"Subtitulo",
+      "categoria":"Categoria",
+      "elegir":"Elegir...",
+      "noticias":"Noticias",
+      "personal":"Personal docente",
+      "detalles":"Detalles",
+      "agregar":"Añadir Notica/Aviso"
+
+
+      
+      
+    },
+    "en":{
+        "inicio":"Homepage",
+        "seccion":"News section",
+        "reciente-menu":"Recent",
+        "popular-menu":"Popular",
+        "avisos-menu":"Notices",
+        "general-menu":"General",
+        "directorio":"Directory",
+        "avisos1":"NOTICES",
+        "reciente1":"RECENT",
+        "general1":"GENERAL",
+        "mostrar":"Show more",
+        "acceder":"lOG IN",
+        "recupera":"RECOVER YOUR PASSWORD HERE",
+        "anadir":"Add news",
+        "titulo":"Title",
+        "subtitulo":"Subtitle",
+        "categoria":"Category",
+        "elegir":"Choose...",
+        "noticias":"News",
+        "personal":"Staff",
+        "detalles":"Details",
+        "agregar":"Add News/Notice"
+    }
+  }

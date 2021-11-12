@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Seccion de los estilos de bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Noticias | Portal Tabasco</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-bottom "
+            style="background-color: rgba(157,36,73,255)">
+            <div class="container-lg">
+                <a class="navbar-brand text-light fw-bold" href="#">Portal Noticias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+                    <form class="d-flex">
+                        <div class="search-container">
+                            <input type="text" name="search" placeholder="Buscar..." class="search-input">
+                            <a href="#" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-lg">
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="../Plantilla-Noticias con Bootstrap/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="./seccion-noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Directorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="./seccion-tramites.html">Tramites</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Gobierno</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Gobernatura </a></li>
+                                <li><a class="dropdown-item" href="#">Centralizado</a></li>
+                                <li><a class="dropdown-item" href="#">Descentralizados</a></li>
+                                <li><a class="dropdown-item" href="#">Descentralizados</a></li>
+                                <li><a class="dropdown-item" href="#">Autónomos</a></li>
+                                <li><a class="dropdown-item" href="#">Municipios</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="card text-light fw-bold" align="center" style="background-color: rgb(177, 87, 57)">
+        <div class="card- ">
+            Noticias
+        </div>
+    </div>
+    <!-- Secccion noticias -->
+    <div class="container  ">
+        <h2 class="card-body text-secondary">PUBLICO GENERAL</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/publico general/aaa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/aviso-precautorio-no-3-con-la-zona-de-convergencia-intertropical">Aviso
+                                Precautorio No. 3 con la Zona de Convergencia Intertropical</a>
+                        </h5>
+                        <p class="card-text ">PERSPECTIVA HIDROMETEOROLÓGICA Y POSIBLES AFECTACIONES...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/publico general/BOLETÍN 2764  CULTURA 10092021 (1).jpeg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/resaltan-tabasquenos-beneficios-de-la-economia-creativa">Resaltan
+                                tabasqueños beneficios de la economía creativa
+
+                            </a>
+                        </h5>
+                        <p class="card-text">Alejandra Pérez González, profesional en animación a computadora y
+                            directora de Foto...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/publico general/BOLETÍN 2763 IEM 10092021 (2).jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/concluye-con-exito-foro-regional-de-consulta-para-la-igualdad-entre-hombres-y-mujeres">
+                                Concluye con éxito Foro Regional de Consulta para la Igualdad entre hombres y mujeres
+                            </a></h5>
+                        <p class="card-text">La directora del IEM, Nelly del Carmen Vargas Pérez y titular de la
+                            Política Naciona...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/publico general/FOTO BOLETÍN 2761 INJUDET 10092021.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/impulsa-injudet-acciones-para-prevenir-el-suicidio-en-la-juventud">Impulsa
+                                Injudet acciones para prevenir el suicidio en la juventud</a>
+                        </h5>
+                        <p class="card-text ">El viernes 17 de septiembre se llevará acabo el Foro de Salud Mental
+                            contra el Suici...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/publico general/FOTO BOLETÍN 2759 SESESPTabasco 10092021 (1).jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/plantea-cndh-nuevo-contrato-social-de-genero-que-desmonte-desigualdades">Plantea
+                                CNDH nuevo contrato social de género que desmonte desigualdades
+
+                            </a>
+                        </h5>
+                        <p class="card-text">Imparte la instructora Aurea Minerva Moraga Alejo curso sobre “Derechos
+                            Humanos de ...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/publico general/ipcet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/anuncia-ipcet-semana-nacional-de-proteccion-civil-2021">
+                                Anuncia IPCET Semana Nacional de Protección Civil 2021
+                            </a></h5>
+                        <p class="card-text"> El organismo invita a participar en los foros virtuales relacionados con
+                            la gestión...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="card-body text-secondary ">SALUD</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/salud/IMAGEN_SALUD COVID.jpeg" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/tabasco-registra-963-casos-nuevos-de-covid-19-pide-salud-no-bajar-guardia-y-cuidarse">
+                                Tabasco registra 963 casos nuevos de COVID-19; pide Salud no bajar guardia y cuidarse
+                            </a></h5>
+                        <p class="card-text">La dependencia exhortó a tabasqueños a quedarse en casa, no acudir a
+                            reuniones famil...
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/salud/VACUNACIÓN EN PARAÍSO (6).jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/concluye-en-paraiso-vacunacion-jovenes-de-18-29-anos">
+                                Concluye en Paraíso vacunación a jóvenes de 18 a 29 años
+                            </a></h5>
+                        <p class="card-text">Con buenos resultados culminó este día el Plan Nacional de Vacunación a
+                            ciudadanos d...
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/salud/VACUNACIÓN CENTRO-SEDE PLAYAS DEL ROSARIO 08092021 (26).jpg"
+                        class="card-img-top" alt="...">
+                    <div>
+                        <h5 class="card-title"><a
+                                href="https://tabasco.gob.mx/noticias/culmina-este-viernes-vacunacion-jovenes-de-18-29-anos-en-centro">
+                                Culmina este viernes vacunación a jóvenes de 18 a 29 años en Centro
+                            </a></h5>
+                        <p class="card-text"> Este jueves se habilitaron nueve sedes de inoculación para suministrar la
+                            primera do...
+                        </p>
+                        <p class="card-text"> <br></p>
+                        <p class="card-text"><br> </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--xc-->
+
+    <p class="float-right container">
+        <a class="text-dark arriba fa-lg" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    </p>
+    <div>
+    </div>
+
+    <!--Paginacion-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item ">
+                <a class="page-link" href="../Plantilla-Noticias con Bootstrap/seccion-noticias.html">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link"
+                    href="../Plantilla-Noticias con Bootstrap/seccion-noticias.html">1</a></li>
+            <li class="page-item"><a class="page-link"
+                    href="../Plantilla-Noticias con Bootstrap/seccion-noticias.html">2</a></li>
+            <li class="page-item"><a class="page-link"
+                    href="../Plantilla-Noticias con Bootstrap/seccion-noticias.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="../Plantilla-Noticias con Bootstrap/seccion-noticias.html">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--Inica Footer -->
+    <p class="centrar" class="float-right container">
+        <a class="text-dark arriba fa-lg" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    </p>
+    <footer class="text-center  text-white" style="background-color: rgba(157,36,73,255)" width="auto" height="auto">
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" align="center">
+                        <!-- Content -->
+
+                        <p>
+                        <div
+                            class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item container-lg ">
+
+                            <p class="container-lg"><img alt="firma blanco.png" height="173" src="img/firma blanco.png"
+                                    width="100" /></p>
+                        </div>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Transparencia
+
+                        </h6>
+                        <p class="text-light">
+                            Portal Transparencia
+
+                        </p>
+                        <p class="text-light">
+                            ITAIP
+                        </p>
+                        <p class="text-light">
+                            Infomex
+                        </p>
+                        <p class="text-light">
+                            Accesibilidad
+                        </p>
+                        <p class="text-light">
+                            Mapa del Sitio
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="region region-footer-fourth-column">
+                            <div id="block-twitter"
+                                class="block block-block-content block-block-content915ccd8b-6cfd-4440-98c4-eae44783ffe5">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Twitter
+                                </h6>
+                                <div
+                                    class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                    <p><a class="twitter-timeline" data-chrome="nofooter noborders noheader"
+                                            data-dnt="false" data-height="260" data-theme="dark" data-tweet-limit="1"
+                                            href="https://twitter.com/Gobierno_Tab?ref_src=twsrc%5Etfw">Tweets by
+                                            Gobierno_Tab</a>
+                                        <script async="" src="https://platform.twitter.com/widgets.js"
+                                            charset="utf-8"></script>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold"> Gobierno del Estado de Tabasco © Derechos Reservados</a>
+        </div>
+
+        <!-- Copyright -->
+    </footer>
+    <!-- Termina Footer -->
+
+
+
+    <!-- Scripts para el funcinamiento de los estilos de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ccf41397b0.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
